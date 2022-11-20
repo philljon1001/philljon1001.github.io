@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+    background-size: auto;
+    
+  }
+
+  .back {
+    background:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animate 3s ease-in-out;
+
+  } 
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    padding: 5px;
+    background: #f4f4f4;
+    margin: 5px 0;
+  }
+  
+  header {
+    background: #daf59b3f;
+    padding: 1rem;
+    text-align: left;
+    text-indent: 250px;
+  }
+  .btnTop {
+    margin-top: 20px;
+    margin-left: 1500px;
+    position: relative;
+    padding: 10px;
+    background: rgb(146, 191, 243);
+    border-radius: 10%;
+
+    
+  }
+  .aTop {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(41, 51, 31);
+
+
+  }
+  
+  .container {
+    position: relative;
+    margin:auto;
+    margin-top: 20px;
+    width:500px;
+    height: auto;
+    overflow: auto;
+    padding: 3rem 2rem;
+    background: rgb(113, 187, 221);
+    border-radius: 6%;
+    opacity: 0.7;
+    }
+    
+   .container:hover {
+    background-color: rgb(100, 88, 66);
+    margin-top: 10px;
+    width: 50%;
+    height: 700px;
+    transition: width 2s, height 3s;
+    opacity: 0.9;
+
+   }
+  
+  
+  #my-form {
+    position: relative;
+    padding: 2rem;
+    background: #f0ecd9;
+    border-radius: 5%;
+    width: auto;
+    height: auto;
+        
+  }
+  
+  #my-form label {
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  #my-form input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(113, 187, 221);
+    
+  }
+  #my-form:hover {
+    width: 100%;
+    height: 100%;
+    transition: width 2s, height 2s;
+    
+  }
+
+  #description {
+    width: 100%
+  }
+  select {
+    background: aliceblue;
+    color: brown;
+    
+  }
+
+  
+  .btn {
+    display: block;
+    width: 30%;
+    padding: 10px 15px;
+    border: 0px;
+    background: rgb(78, 185, 228);
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .btn:hover {
+    background: rgb(116, 112, 65);
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }

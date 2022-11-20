@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Case</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+        
+        
+        <body>
+    
+        <div class="back">
+            <header id="Top">
+                <h1>We're here to Help!</h1>
+            </header>
+
+        <div>
+            <button class= "btnTop" type="button"><a href="https://curious-impala-lslja1-dev-ed.trailblaze.my.site.com/Partners" target="_blank" class="aTop">Back to Login Page</a></button>
+        </div>
+
+        <section class="container">
+            <!-- <form id="my-form" > -->
+    
+            <form id="my-form" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+            
+        
+                <input type=hidden name="orgid" value="00D6S000001O3GK">
+                <input type=hidden name="retURL" value="https://curious-impala-lslja1-dev-ed.trailblaze.my.site.com/Partners">
+            <h1>New Case Form</h1>
+            <div class="msg"></div>
+    
+            <div>
+                <label for="name">Contact Name</label>
+                <input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea><br>
+            </div>
+            <div>
+                <label for="reason">Case Reason</label>
+                <select  id="reason" name="reason">
+                    <option value="">--None--</option>
+                    <option value="Installation">Installation</option>
+                    <option value="Equipment Complexity">Equipment Complexity</option>
+                    <option value="Performance">Performance</option>
+                    <option value="Breakdown">Breakdown</option>
+                    <option value="Equipment Design">Equipment Design</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select><br>
+            </div>
+            <input type="hidden"  id="external" name="external" value="1" /><br>
+            <input class="btn" type="submit" value="Submit Query">
+            
+    
+        </form>
+
+    
+        <ul id="users"></ul>
+    
+    
+       
+        <!--<ul class="items">
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>-->
+    
+        
+    
+    </section>
+</div>
+
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
