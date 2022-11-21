@@ -25,11 +25,13 @@
         <section class="container">
             <!-- <form id="my-form" > -->
     
-            <form id="my-form" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+            <!-- <form id="my-form" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST"> //for personal Org--> 
+            <form id="my-form" action="https://blackforce123--c4group7.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
             
-        
-                <input type=hidden name="orgid" value="00D6S000001O3GK">
-                <input type=hidden name="retURL" value="https://curious-impala-lslja1-dev-ed.trailblaze.my.site.com/Partners">
+                <input type=hidden name="orgid" value="00D7X0000004lOp">
+                <input type=hidden name="retURL" value="https://blackforce123--c4group7.sandbox.my.site.com/support">
+                <!-- <input type=hidden name="orgid" value="00D6S000001O3GK">
+                <input type=hidden name="retURL" value="https://curious-impala-lslja1-dev-ed.trailblaze.my.site.com/Partners"> -->
             <h1>New Case Form</h1>
             <div class="msg"></div>
     
@@ -54,6 +56,14 @@
                 <textarea id="description" name="description"></textarea><br>
             </div>
             <div>
+                Case Department:<select  id="00N7X000003jdd8" name="00N7X000003jdd8" title="Case Department">
+                    <option value="">--None--</option><option value="Service">Service</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Settlement/Finance">Settlement/Finance</option>
+                    <option value="Risk and Compliance">Risk and Compliance</option>
+                </select><br>
+            </div>
+            <!-- <div>
                 <label for="reason">Case Reason</label>
                 <select  id="reason" name="reason">
                     <option value="">--None--</option>
@@ -65,7 +75,7 @@
                     <option value="Feedback">Feedback</option>
                     <option value="Other">Other</option>
                 </select><br>
-            </div>
+            </div> -->
             <input type="hidden"  id="external" name="external" value="1" /><br>
             <input class="btn" type="submit" value="Submit Query">
             
