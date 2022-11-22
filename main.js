@@ -265,9 +265,9 @@
 // ul.lastElementChild.innerHTML = '<h2>Hey Man</h2>'
 
 const btn = document.querySelector('.btn');
-const myForm = document.querySelector('#my-form');
+
 const contactName = document.querySelector('#name');
-const email = document.querySelector('#email');
+
 const msg = document.querySelector('.msg');
 const description = document.querySelector('#description');
 
@@ -280,13 +280,57 @@ function changeBg(){
     'url("./images/img4.jpg")',
     'url("./images/img5.jpg")',
     'url("./images/img6.jpg")',
-    'url("./images/img7.jpg")'
+    'url("./images/img7.jpg")',
+    'url("./images/img8.jpg")',
+    'url("./images/img9.jpg")',
+    'url("./images/img10.jpg")',
+    'url("./images/img11.jpg")',
+    'url("./images/img12.jpg")',
+    'url("./images/img13.jpg")',
+    'url("./images/img14.jpg")'
     ]
     var bg = images[Math.floor(Math.random() * images.length)];
     image.style.background= bg;
 
 }
-setInterval(changeBg, 3000);
+setInterval(changeBg, 10000);
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const department = document.getElementById('00N7X000003jdd8');
+const myForm = document.getElementById('my-form');
+const errElement = document.getElementById('error');
+
+myForm.addEventListener('submit', (e) => {
+    
+    let messages = [];
+    // if(name.value === '' || name.value == null){
+    //     messages.push('Name is required')
+    // }
+    // if(email.value === '' || email.value == null){
+    //     messages.push('Please enter a valid email')
+    // }
+    if(department.value === '' || department.value == '--None--'){
+        messages.push('Please select a Case Department')
+    }
+   
+    const popup = document.getElementById('popup');
+
+    function openPopup(){
+        popup.classList.add('open-popup');
+    }
+    function closePopup(){
+        popup.classList.remove('open-popup');
+        }
+    
+    if(messages.length > 0){
+        e.preventDefault()
+        errElement.innerText = messages.join(', ')
+    }
+    
+})
+
+
 
 
 
