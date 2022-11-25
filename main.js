@@ -264,6 +264,8 @@
 // ul.children[1].innerText = 'Guess';
 // ul.lastElementChild.innerHTML = '<h2>Hey Man</h2>'
 
+
+
 const btn = document.querySelector('.btn');
 
 const contactName = document.querySelector('#name');
@@ -274,7 +276,6 @@ const description = document.querySelector('#description');
 function changeBg(){
     var image = document.querySelector('.back')
     var images = [
-    'url("./images/img1.jpg")',
     'url("./images/img2.jpg")',
     'url("./images/img3.jpg")',
     'url("./images/img4.jpg")',
@@ -286,6 +287,7 @@ function changeBg(){
     'url("./images/img10.jpg")',
     'url("./images/img11.jpg")',
     'url("./images/img12.jpg")',
+    'url("./images/img1.jpg")',
     'url("./images/img13.jpg")',
     'url("./images/img14.jpg")'
     ]

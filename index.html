@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Case</title>
-        <link rel="stylesheet" href="style.css">
+    <title>OTT Pay Create Case Form</title>
+    <link rel="stylesheet" href="style.css">
+    
     </head>
     
         
@@ -15,12 +16,22 @@
     
         <div class="back">
             <header id="Top">
-                <h1>Get in touch!</h1>
+                 <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <label class="logo">OTT Pay</label>
+                    <ul>
+                        <li><a class="active" href="https://blackforce123--c4group7.sandbox.my.site.com/support" target="_blank" class="aTop">Home</a></li>
+                        <li><a href="https://blackforce123--c4group7.sandbox.my.site.com/login" target="_blank" class="aTop">Login</a></li>
+                        <li><a href="https://blackforce123--c4group7.sandbox.my.site.com/support" target="_blank" class="aTop">Feedback</a></li>
+                    </ul>
+                </nav>
+                
             </header>
 
-        <div>
-            <button class= "btnTop" type="button"><a href="https://blackforce123--c4group7.sandbox.my.site.com/support" target="_blank" class="aTop">Back to Login Page</a></button>
-        </div>
+        
 
         <section class="container">
             <!-- <form id="my-form" > -->
@@ -37,16 +48,17 @@
             <div class="msg"></div>
     
             <div>
-                <label for="name"><span>* </span>Name</label>
+                <label for="name"><i class="fa-solid fa-user"></i>
+                </label>
                 <input  id="name" maxlength="80" name="name" size="20" type="text" required placeholder="Name"/><br>
             </div>
             <div>
-                <label for="email"><span>* </span>Email </label>
-                <input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input  id="email" maxlength="80" name="email" size="20" type="text" required placeholder="Email"/><br>
             </div>
             <div>
-                <label for="phone">Phone</label>
-                <input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+                <label for="phone"><i class="fa-solid fa-phone"></i></label>
+                <input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Phone"/><br>
             </div>
             <div>
                 <label for="subject">Subject</label>
@@ -92,7 +104,7 @@
                 <button type="submit" onclick="closePopup()">OK</button>
             </div>
             <input type="hidden"  id="external" name="external" value="1" /><br>
-            <input class="btn" type="submit" value="Submit Query" />
+            <input class="btn" type="submit" value="Submit" />
             
         </form>
     </section>
@@ -103,6 +115,7 @@
     
    
 </div>
+<script src="https://kit.fontawesome.com/097fd1dd3d.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
 </html>
